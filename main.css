@@ -1,0 +1,186 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.wishlist {
+    list-style: none;
+    padding: 0;
+}
+
+.wishlist-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishlist-item button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wishlist-item button:hover {
+    background: #c0392b;
+}
+
+.add-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.add-item input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-item button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-item button:hover {
+    background: #27ae60;
+} */
+
+
+
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3436;
+    
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 8px #fff8;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    padding: 32px 24px 24px 24px;
+}
+
+#item-input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #b2bec3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s;
+    outline: none;
+    margin-right: 10px;
+}
+
+#item-input:focus {
+    border: 1.5px solid #43c6ac;
+}
+
+#add-button {
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px #43c6ac44;
+}
+
+#add-button:hover {
+    background: linear-gradient(90deg, #191654 0%, #43c6ac 100%);
+    transform: scale(1.05);
+}
+
+#wishlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.wishlist-item {
+    background: #f1f2f6;
+    margin: 12px 0;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px #b2bec344;
+    animation: slideIn 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.remove-button {
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s, transform 0.1s;
+    margin-left: 18px;
+    box-shadow: 0 2px 8px #ff585844;
+}
+
+.remove-button:hover {
+    background: linear-gradient(90deg, #f09819 0%, #ff5858 100%);
+    transform: scale(1.08);
+}
